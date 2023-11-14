@@ -10,19 +10,55 @@
  body{
     height: 100vh;
     box-sizing: border-box;
+    padding: 30px;
+ }
+
+
+ header{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 50px;
+
  }
 
  .conteudo{
-    display: flex;
-   
- }
+   display: flex;
+   align-items:flex-start
+  
+}
 
- .card{
-    width: calc(50% - 10px);
-    margin: 5px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.card{
+   width: calc(50% - 10px);
+   margin: 5px; 
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   max-width: 400px;
+   border-radius: 5px;
+    
+}
+
+.cards{
+   display: flex; 
+   flex-wrap: wrap;
+   gap: 20px;
+   width: 900px;
    
- }
+}
+
+.navegacao a {
+   color: #999999; 
+  
+}
+
+
+.navegacao p{
+   font-weight: bold;
+}
+
+img{
+  max-width: 100%;
+}
+
 
 header > p {
     color: #999999;    
@@ -30,5 +66,9 @@ header > p {
 
 .card > .ler-mais {
     color: #007cb8;
+    font-weight: bold;
+    padding: 5px;
 }
-
+ul{
+   list-style: none;
+}
